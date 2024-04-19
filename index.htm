@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="style.css" />
+    <title>Login</title>
+  </head>
+  <body>
+    <div class="mainContent">
+      <form class="login activeForm">
+        <div class="options">
+          <button type="button" class="left openCreateAccount" onclick="createAccount()">Criar Conta</button>
+          <button type="button" class="right openLogin active">Login</button>
+        </div>
+        <h2>Bem Vindo!</h2>
+        <p>Estamos felizes em tê-lo conosco.</p>
+        <input
+          type="email"
+          name="email"
+          id="email"
+          placeholder="Digite seu E-mail"
+          required
+        />
+        <input
+          type="password"
+          name="password"
+          id="password"
+          placeholder="Digite sua Senha"
+          required
+        />
+        <button class="btn" type="submit">Entrar</button>
+        <p class="openForgotPassword" onclick="forgotPassword()">
+          Esqueceu sua senha?
+        </p>
+      </form>
+
+      <form class="createAccount">
+        <div class="options">
+          <button class="left openCreateAccount active">Criar Conta</button>
+          <button class="right openLogin" onclick="login()">Login</button>
+        </div>
+        <h2>Crie sua Conta</h2>
+        <p>Com apenas alguns dados, sua conta será criada:</p>
+        <input
+          type="text"
+          name="name"
+          id="name"
+          placeholder="Seu Nome"
+          required
+        />
+        <input
+          type="email"
+          name="email"
+          id="email"
+          placeholder="Digite seu E-mail"
+          required
+        />
+        <input
+          type="password"
+          name="password"
+          id="password"
+          placeholder="Digite sua Senha"
+          required
+        />
+        <input
+          type="password"
+          name="password"
+          id="password"
+          placeholder="Confirme sua Senha"
+          required
+        />
+        <button class="btn" type="submit">Criar Conta</button>
+      </form>
+
+      <form class="forgotPassword">
+        <div class="options">
+          <button class="left openCreateAccount" onclick="createAccount()">Criar Conta</button>
+          <button class="right openLogin active" onclick="login()">Login</button>
+        </div>
+        <h2>Recupere sua senha</h2>
+        <p>Enviaremos um e-mail para redefinir sua senha:</p>
+        <input
+          type="email"
+          name="email"
+          id="email"
+          placeholder="Digite seu E-mail"
+          required
+        />
+        <button class="btn" type="submit">Enviar</button>
+      </form>
+    </div>
+
+    <script src="script.js"></script>
+  </body>
+</html>
